@@ -28,19 +28,21 @@
           form_data.append("password", password.value);
 
           let url = "https://test-api.clonedesk.com/api/v2/current-user/login-session"
-          let response = await fetch(url, {
+          fetch(url, {
               method: 'POST',
               body: form_data,
               credentials: "include"
-          });
-          let result = await response.json();
-          console.log(response);
-          if(!result.success) {
+          }).then(async (response) => {
+              let result = await response.json();
+              console.log(response);
+              if(!result.success) {
+                  wrong_password_error_shown = true;
+              } else {
+                location.href = "/dashboard";
+              }
+          }).catch(_err => {
               wrong_password_error_shown = true;
-          } else {
-            location.href = "/dashboard";
-          }
-
+          });
         }
     }
 </script>

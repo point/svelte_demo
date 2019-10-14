@@ -11,6 +11,8 @@ xhr.onload = function(event){
         create_organizations(data);
         create_projects(data);
         create_channels(data);
+    } else {
+        location.href = "/";
     }
 };
 xhr.send();
