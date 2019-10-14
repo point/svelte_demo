@@ -38,7 +38,7 @@
           if(!result.success) {
               wrong_password_error_shown = true;
           } else {
-            console.log(result);
+            location.href = "/dashboard";
           }
 
         }

@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.head.appendChild(r) })(window.document);
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':5001/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.head.appendChild(r) })(window.document);
 var app = (function () {
     'use strict';
 
@@ -307,7 +307,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Field should be in proper format";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 184, 16, 4878);
+    			add_location(span, file, 184, 16, 4887);
     		},
 
     		m: function mount(target, anchor) {
@@ -333,7 +333,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Password is required";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 191, 16, 5357);
+    			add_location(span, file, 191, 16, 5366);
     		},
 
     		m: function mount(target, anchor) {
@@ -359,7 +359,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Wrong email or password";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 194, 16, 5484);
+    			add_location(span, file, 194, 16, 5493);
     		},
 
     		m: function mount(target, anchor) {
@@ -415,7 +415,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Forgot Password?";
     			attr_dev(h3, "class", " svelte-64b0nq");
-    			add_location(h3, file, 180, 2, 4545);
+    			add_location(h3, file, 180, 2, 4554);
     			attr_dev(input0, "class", "email svelte-64b0nq");
     			attr_dev(input0, "type", "email");
     			attr_dev(input0, "placeholder", "E-mail");
@@ -426,9 +426,9 @@ var app = (function () {
     			attr_dev(input0, "aria-required", "true");
     			attr_dev(input0, "aria-invalid", "true");
     			attr_dev(input0, "aria-describedby", "loginForm\\[email\\]-error");
-    			add_location(input0, file, 182, 12, 4619);
+    			add_location(input0, file, 182, 12, 4628);
     			attr_dev(div0, "class", "field-wrapper svelte-64b0nq");
-    			add_location(div0, file, 181, 8, 4579);
+    			add_location(div0, file, 181, 8, 4588);
     			attr_dev(input1, "class", "password svelte-64b0nq");
     			attr_dev(input1, "type", "password");
     			attr_dev(input1, "autocomplete", "off");
@@ -440,36 +440,36 @@ var app = (function () {
     			attr_dev(input1, "aria-required", "true");
     			attr_dev(input1, "aria-invalid", "false");
     			attr_dev(input1, "aria-describedby", "loginForm\\[password\\]-error");
-    			add_location(input1, file, 189, 12, 5061);
+    			add_location(input1, file, 189, 12, 5070);
     			attr_dev(div1, "class", "field-wrapper svelte-64b0nq");
-    			add_location(div1, file, 188, 8, 5021);
+    			add_location(div1, file, 188, 8, 5030);
     			attr_dev(button, "type", "submit");
     			attr_dev(button, "class", "btn green uppercase svelte-64b0nq");
     			attr_dev(button, "tabindex", "4");
-    			add_location(button, file, 199, 3, 5601);
+    			add_location(button, file, 199, 3, 5610);
     			attr_dev(input2, "type", "checkbox");
     			attr_dev(input2, "name", "loginForm[remember]");
     			input2.value = "1";
     			attr_dev(input2, "class", "svelte-64b0nq");
-    			add_location(input2, file, 201, 4, 5714);
+    			add_location(input2, file, 201, 4, 5723);
     			attr_dev(span, "tabindex", "3");
     			attr_dev(span, "class", "svelte-64b0nq");
-    			add_location(span, file, 201, 72, 5782);
+    			add_location(span, file, 201, 72, 5791);
     			attr_dev(label, "class", "rememberme  svelte-64b0nq");
-    			add_location(label, file, 200, 3, 5682);
+    			add_location(label, file, 200, 3, 5691);
     			attr_dev(a, "href", "/");
     			attr_dev(a, "id", "forget-password");
     			attr_dev(a, "class", "forget-password svelte-64b0nq");
-    			add_location(a, file, 203, 3, 5824);
+    			add_location(a, file, 203, 3, 5833);
     			attr_dev(div2, "class", "form-actions svelte-64b0nq");
-    			add_location(div2, file, 198, 2, 5571);
+    			add_location(div2, file, 198, 2, 5580);
     			attr_dev(form, "name", "loginForm");
     			attr_dev(form, "class", "login-form svelte-64b0nq");
     			attr_dev(form, "action", "/login");
     			attr_dev(form, "method", "post");
     			attr_dev(form, "autocomplete", "off");
     			form.noValidate = "novalidate";
-    			add_location(form, file, 179, 0, 4385);
+    			add_location(form, file, 179, 0, 4394);
     			dispose = listen_dev(form, "submit", prevent_default(ctx.submit_handler), false, true);
     		},
 
@@ -597,7 +597,7 @@ var app = (function () {
               if(!result.success) {
                   $$invalidate('wrong_password_error_shown', wrong_password_error_shown = true);
               } else {
-                console.log(result);
+                location.href = "/dashboard";
               }
 
             }

@@ -1,0 +1,89 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body.dashboard {
+    background-color: #364150;
+    padding: 0;
+    margin: 0;
+}
+body.dashboard .container {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav content"
+    "footer footer";
+    /* height: 100vh; */
+    grid-template-columns: 235px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 0px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body.dashboard header {
+    grid-area: header;
+    background: #2b3643;
+}
+body.dashboard header .page-logo {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body.dashboard header .page-logo a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+body.dashboard header .page-logo a h3 {
+    margin: 10px 0 20px 0;
+    font-size: 24px;
+}
+
+body.dashboard nav {
+    grid-area: nav;
+}
+body.dashboard nav li {
+    background: 0 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+body.dashboard nav li a {
+    color: #b4bcc8;
+    display: block;
+    margin: 0;
+    padding: 6px 15px 6px 43px;
+    text-decoration: none;
+    font-size: 14px;
+    background: 0 0;
+    position: relative;
+    font-weight: 300;
+}
+
+body.dashboard nav .nav-item-add a {
+    font-weight: bold;
+}
+
+body.dashboard main {
+    grid-area: content;
+    background: white;
+}
+body.dashboard footer {
+    grid-area: footer;
+    padding: 8px 20px 5px;
+    font-size: 13px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+}
+body.dashboard footer .page-footer-inner {
+    color: #98a6ba;
+}
+body.dashboard footer .page-footer-inner a {
+    text-shadow: none;
+    color: #337ab7;
+    text-decoration: none;
+}
