@@ -67,6 +67,77 @@ body.dashboard nav .nav-item-add a {
     font-weight: bold;
 }
 
+
+body.dashboard nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+    display: none;
+}
+body.dashboard nav .nav-toggle {
+    background: #36c6d3;
+    border-top-color: transparent;
+    color: #fff;
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+body.dashboard nav .nav-toggle::before {
+    width: 20px;
+    text-align: center;
+    display: inline;
+    font-size: 16px;
+    font-family: FontAwesome;
+    height: auto;
+    content: "\f104";
+    font-weight: 300;
+    text-shadow: none;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+body.dashboard nav .nav-toggle.open::before {
+    content: "\f107";
+}
+body.dashboard nav .nav-toggle.open + ul {
+  display: block;
+}
+body.dashboard nav a > i {
+    font-size: 16px;
+    margin-right: 5px;
+    text-shadow: none;
+}
+body.dashboard nav .nav-item-add a:hover {
+    background: #3e4b5c;
+}
+
+
+body.dashboard nav .nav-link {
+display: flex;
+}
+body.dashboard nav .nav-item a:hover {
+    background: #3e4b5c;
+}
+body.dashboard nav .nav-link .title {
+flex-grow: 2;
+}
+body.dashboard nav .nav-link .badge {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2px 6px 2px;
+    color: #fff;
+    border-radius: 12px;
+    text-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.18);
+    background-color: #ed6b75;
+}
+
 body.dashboard main {
     grid-area: content;
     background: white;
