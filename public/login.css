@@ -1,0 +1,41 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body.login {
+    background: #364150;
+    display: flex;
+    flex-direction: column;
+}
+body.login .title {
+    margin-top: 75px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+}
+
+body.login .title a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bolder;
+}
+body.login .title h3 {
+    margin: 10px 0 20px 0;
+    display: inline;
+    font-size: 24px;
+}
+
+body.login .content {
+    display: flex;
+    margin: 55px 0 10px 0;
+    padding: 10px 30px 30px 30px;
+    background-color: white;
+    width: 390px;
+    max-width: 390px;
+    align-self: center;
+    border: 1px solid transparent;
+    border-radius: 7px;
+
+}
+body.login .content {
