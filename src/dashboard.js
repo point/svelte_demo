@@ -15,6 +15,9 @@ xhr.onload = function(event){
         window.location.replace("/");
     }
 };
+//xhr.onerror = function(event){
+    //window.location.replace("/");
+//};
 xhr.send();
 
 function create_organizations(data) {

@@ -298,7 +298,7 @@ var app = (function () {
 
     const file = "src/Login.svelte";
 
-    // (186:12) {#if email_error_shown}
+    // (187:12) {#if email_error_shown}
     function create_if_block_2(ctx) {
     	var span;
 
@@ -307,7 +307,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Field should be in proper format";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 186, 16, 5020);
+    			add_location(span, file, 187, 16, 5186);
     		},
 
     		m: function mount(target, anchor) {
@@ -320,11 +320,11 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block_2.name, type: "if", source: "(186:12) {#if email_error_shown}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block_2.name, type: "if", source: "(187:12) {#if email_error_shown}", ctx });
     	return block;
     }
 
-    // (193:12) {#if password_error_shown}
+    // (194:12) {#if password_error_shown}
     function create_if_block_1(ctx) {
     	var span;
 
@@ -333,7 +333,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Password is required";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 193, 16, 5499);
+    			add_location(span, file, 194, 16, 5665);
     		},
 
     		m: function mount(target, anchor) {
@@ -346,11 +346,11 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block_1.name, type: "if", source: "(193:12) {#if password_error_shown}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block_1.name, type: "if", source: "(194:12) {#if password_error_shown}", ctx });
     	return block;
     }
 
-    // (196:12) {#if wrong_password_error_shown}
+    // (197:12) {#if wrong_password_error_shown}
     function create_if_block(ctx) {
     	var span;
 
@@ -359,7 +359,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Wrong email or password";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 196, 16, 5626);
+    			add_location(span, file, 197, 16, 5792);
     		},
 
     		m: function mount(target, anchor) {
@@ -372,7 +372,7 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block.name, type: "if", source: "(196:12) {#if wrong_password_error_shown}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block.name, type: "if", source: "(197:12) {#if wrong_password_error_shown}", ctx });
     	return block;
     }
 
@@ -415,7 +415,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Forgot Password?";
     			attr_dev(h3, "class", " svelte-64b0nq");
-    			add_location(h3, file, 182, 2, 4687);
+    			add_location(h3, file, 183, 2, 4853);
     			attr_dev(input0, "class", "email svelte-64b0nq");
     			attr_dev(input0, "type", "email");
     			attr_dev(input0, "placeholder", "E-mail");
@@ -426,9 +426,9 @@ var app = (function () {
     			attr_dev(input0, "aria-required", "true");
     			attr_dev(input0, "aria-invalid", "true");
     			attr_dev(input0, "aria-describedby", "loginForm\\[email\\]-error");
-    			add_location(input0, file, 184, 12, 4761);
+    			add_location(input0, file, 185, 12, 4927);
     			attr_dev(div0, "class", "field-wrapper svelte-64b0nq");
-    			add_location(div0, file, 183, 8, 4721);
+    			add_location(div0, file, 184, 8, 4887);
     			attr_dev(input1, "class", "password svelte-64b0nq");
     			attr_dev(input1, "type", "password");
     			attr_dev(input1, "autocomplete", "off");
@@ -440,36 +440,36 @@ var app = (function () {
     			attr_dev(input1, "aria-required", "true");
     			attr_dev(input1, "aria-invalid", "false");
     			attr_dev(input1, "aria-describedby", "loginForm\\[password\\]-error");
-    			add_location(input1, file, 191, 12, 5203);
+    			add_location(input1, file, 192, 12, 5369);
     			attr_dev(div1, "class", "field-wrapper svelte-64b0nq");
-    			add_location(div1, file, 190, 8, 5163);
+    			add_location(div1, file, 191, 8, 5329);
     			attr_dev(button, "type", "submit");
     			attr_dev(button, "class", "btn green uppercase svelte-64b0nq");
     			attr_dev(button, "tabindex", "4");
-    			add_location(button, file, 201, 3, 5743);
+    			add_location(button, file, 202, 3, 5909);
     			attr_dev(input2, "type", "checkbox");
     			attr_dev(input2, "name", "loginForm[remember]");
     			input2.value = "1";
     			attr_dev(input2, "class", "svelte-64b0nq");
-    			add_location(input2, file, 203, 4, 5856);
+    			add_location(input2, file, 204, 4, 6022);
     			attr_dev(span, "tabindex", "3");
     			attr_dev(span, "class", "svelte-64b0nq");
-    			add_location(span, file, 203, 72, 5924);
+    			add_location(span, file, 204, 72, 6090);
     			attr_dev(label, "class", "rememberme  svelte-64b0nq");
-    			add_location(label, file, 202, 3, 5824);
+    			add_location(label, file, 203, 3, 5990);
     			attr_dev(a, "href", "/");
     			attr_dev(a, "id", "forget-password");
     			attr_dev(a, "class", "forget-password svelte-64b0nq");
-    			add_location(a, file, 205, 3, 5966);
+    			add_location(a, file, 206, 3, 6132);
     			attr_dev(div2, "class", "form-actions svelte-64b0nq");
-    			add_location(div2, file, 200, 2, 5713);
+    			add_location(div2, file, 201, 2, 5879);
     			attr_dev(form, "name", "loginForm");
     			attr_dev(form, "class", "login-form svelte-64b0nq");
     			attr_dev(form, "action", "/login");
     			attr_dev(form, "method", "post");
     			attr_dev(form, "autocomplete", "off");
     			form.noValidate = "novalidate";
-    			add_location(form, file, 181, 0, 4527);
+    			add_location(form, file, 182, 0, 4693);
     			dispose = listen_dev(form, "submit", prevent_default(ctx.submit_handler), false, true);
     		},
 
@@ -587,21 +587,22 @@ var app = (function () {
               form_data.append("password", password.value);
 
               let url = "https://test-api.clonedesk.com/api/v2/current-user/login-session";
-              fetch(url, {
-                  method: 'POST',
-                  body: form_data,
-                  credentials: "include"
-              }).then(async (response) => {
-                  let result = await response.json();
-                  console.log(response);
-                  if(!result.success) {
-                      $$invalidate('wrong_password_error_shown', wrong_password_error_shown = true);
-                  } else {
-                    window.location.replace("/dashboard");
-                  }
-              }).catch(_err => {
-                  $$invalidate('wrong_password_error_shown', wrong_password_error_shown = true);
-              });
+              let xhr = new XMLHttpRequest();
+              xhr.open('POST', url, true);
+              /*xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");*/
+              xhr.onload = function(event){
+                  if(event.currentTarget.status == 200){
+                      let result = JSON.parse(event.target.responseText);
+                      if(!result || !result.success) {
+                          $$invalidate('wrong_password_error_shown', wrong_password_error_shown = true);
+                      } else {
+                        window.location.replace("/dashboard");
+                      }
+                    } else {
+                        $$invalidate('wrong_password_error_shown', wrong_password_error_shown = true);
+                    }
+              };
+              xhr.send(form_data);
             }
         }
 
