@@ -1859,7 +1859,7 @@
             create_projects(data);
             create_channels(data);
         } else {
-            location.href = "/";
+            window.location.replace("/");
         }
     };
     xhr.send();

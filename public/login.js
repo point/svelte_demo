@@ -307,7 +307,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Field should be in proper format";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 186, 16, 5011);
+    			add_location(span, file, 186, 16, 5020);
     		},
 
     		m: function mount(target, anchor) {
@@ -333,7 +333,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Password is required";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 193, 16, 5490);
+    			add_location(span, file, 193, 16, 5499);
     		},
 
     		m: function mount(target, anchor) {
@@ -359,7 +359,7 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Wrong email or password";
     			attr_dev(span, "class", "error svelte-64b0nq");
-    			add_location(span, file, 196, 16, 5617);
+    			add_location(span, file, 196, 16, 5626);
     		},
 
     		m: function mount(target, anchor) {
@@ -415,7 +415,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Forgot Password?";
     			attr_dev(h3, "class", " svelte-64b0nq");
-    			add_location(h3, file, 182, 2, 4678);
+    			add_location(h3, file, 182, 2, 4687);
     			attr_dev(input0, "class", "email svelte-64b0nq");
     			attr_dev(input0, "type", "email");
     			attr_dev(input0, "placeholder", "E-mail");
@@ -426,9 +426,9 @@ var app = (function () {
     			attr_dev(input0, "aria-required", "true");
     			attr_dev(input0, "aria-invalid", "true");
     			attr_dev(input0, "aria-describedby", "loginForm\\[email\\]-error");
-    			add_location(input0, file, 184, 12, 4752);
+    			add_location(input0, file, 184, 12, 4761);
     			attr_dev(div0, "class", "field-wrapper svelte-64b0nq");
-    			add_location(div0, file, 183, 8, 4712);
+    			add_location(div0, file, 183, 8, 4721);
     			attr_dev(input1, "class", "password svelte-64b0nq");
     			attr_dev(input1, "type", "password");
     			attr_dev(input1, "autocomplete", "off");
@@ -440,36 +440,36 @@ var app = (function () {
     			attr_dev(input1, "aria-required", "true");
     			attr_dev(input1, "aria-invalid", "false");
     			attr_dev(input1, "aria-describedby", "loginForm\\[password\\]-error");
-    			add_location(input1, file, 191, 12, 5194);
+    			add_location(input1, file, 191, 12, 5203);
     			attr_dev(div1, "class", "field-wrapper svelte-64b0nq");
-    			add_location(div1, file, 190, 8, 5154);
+    			add_location(div1, file, 190, 8, 5163);
     			attr_dev(button, "type", "submit");
     			attr_dev(button, "class", "btn green uppercase svelte-64b0nq");
     			attr_dev(button, "tabindex", "4");
-    			add_location(button, file, 201, 3, 5734);
+    			add_location(button, file, 201, 3, 5743);
     			attr_dev(input2, "type", "checkbox");
     			attr_dev(input2, "name", "loginForm[remember]");
     			input2.value = "1";
     			attr_dev(input2, "class", "svelte-64b0nq");
-    			add_location(input2, file, 203, 4, 5847);
+    			add_location(input2, file, 203, 4, 5856);
     			attr_dev(span, "tabindex", "3");
     			attr_dev(span, "class", "svelte-64b0nq");
-    			add_location(span, file, 203, 72, 5915);
+    			add_location(span, file, 203, 72, 5924);
     			attr_dev(label, "class", "rememberme  svelte-64b0nq");
-    			add_location(label, file, 202, 3, 5815);
+    			add_location(label, file, 202, 3, 5824);
     			attr_dev(a, "href", "/");
     			attr_dev(a, "id", "forget-password");
     			attr_dev(a, "class", "forget-password svelte-64b0nq");
-    			add_location(a, file, 205, 3, 5957);
+    			add_location(a, file, 205, 3, 5966);
     			attr_dev(div2, "class", "form-actions svelte-64b0nq");
-    			add_location(div2, file, 200, 2, 5704);
+    			add_location(div2, file, 200, 2, 5713);
     			attr_dev(form, "name", "loginForm");
     			attr_dev(form, "class", "login-form svelte-64b0nq");
     			attr_dev(form, "action", "/login");
     			attr_dev(form, "method", "post");
     			attr_dev(form, "autocomplete", "off");
     			form.noValidate = "novalidate";
-    			add_location(form, file, 181, 0, 4518);
+    			add_location(form, file, 181, 0, 4527);
     			dispose = listen_dev(form, "submit", prevent_default(ctx.submit_handler), false, true);
     		},
 
@@ -597,7 +597,7 @@ var app = (function () {
                   if(!result.success) {
                       $$invalidate('wrong_password_error_shown', wrong_password_error_shown = true);
                   } else {
-                    location.href = "/dashboard";
+                    window.location.replace("/dashboard");
                   }
               }).catch(_err => {
                   $$invalidate('wrong_password_error_shown', wrong_password_error_shown = true);
