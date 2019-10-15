@@ -28,22 +28,39 @@
           form_data.append("password", password.value);
 
           let url = "https://test-api.clonedesk.com/api/v2/current-user/login-session"
-          let xhr = new XMLHttpRequest();
-          xhr.open('POST', url, true);
-          /*xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");*/
-          xhr.onload = function(event){
-              if(event.currentTarget.status == 200){
-                  let result = JSON.parse(event.target.responseText);
-                  if(!result || !result.success) {
-                      wrong_password_error_shown = true;
-                  } else {
-                    window.location.replace("/dashboard");
-                  }
-                } else {
-                    wrong_password_error_shown = true;
-                }
-          };
-          xhr.send(form_data);
+          fetch(url, {
+              method: 'POST',
+              body: form_data,
+              credentials: "include"
+          }).then(async (response) => {
+              let result = await response.json();
+              if(!result || !result.success) {
+                  wrong_password_error_shown = true;
+              } else {
+                window.location.replace("/dashboard.html");
+              }
+          }).catch(_err => {
+              wrong_password_error_shown = true;
+          });
+
+
+
+          /*let xhr = new XMLHttpRequest();*/
+          /*xhr.open('POST', url, true);*/
+          /*xhr.onload = function(event){*/
+              /*if(event.currentTarget.status == 200){*/
+                  /*console.error(event.currentTarget);*/
+                  /*let result = JSON.parse(event.target.responseText);*/
+                  /*if(!result || !result.success) {*/
+                      /*wrong_password_error_shown = true;*/
+                  /*} else {*/
+                    /*window.location.replace("/dashboard.html");*/
+                  /*}*/
+                /*} else {*/
+                    /*wrong_password_error_shown = true;*/
+                /*}*/
+          /*};*/
+          /*xhr.send(form_data);*/
         }
     }
 </script>
