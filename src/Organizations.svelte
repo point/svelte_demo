@@ -1,14 +1,15 @@
 <script>
-  export let organizations = null;
   import Organization from "./Organization.svelte";
+  import { organizations } from './stores.js';
 
   let nav_open = true;
+
 </script>
 
 <style>
 </style>
 
-{#if organizations}
+{#if $organizations && $organizations.length > 0}
     <a href="#" on:click|preventDefault="{() => nav_open = !nav_open}" class="nav-toggle {nav_open ? 'open' : ''}" id="sidebar-org">
         <i class="fa fa-building-o"></i>
         <span class="title">Organizations</span> <span class="arrow open"></span>
@@ -20,8 +21,10 @@
             <span class="title">Add Organization</span>
             </a>
         </li>
-        {#each organizations as org}
-            <Organization name={org.name} tasksOverall={org.tasksOverall}/>
+        {#each $organizations as org}
+            <Organization name={org.name} 
+            tasksOverall={org.tasksOverall} id={org.id}
+            tasksOverallNotViewed={org.tasksOverallNotViewed}/>
         {/each}
     </ul>
 {/if}
