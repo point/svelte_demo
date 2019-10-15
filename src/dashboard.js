@@ -15,9 +15,9 @@ xhr.onload = function(event){
         window.location.replace("/");
     }
 };
-//xhr.onerror = function(event){
-    //window.location.replace("/");
-//};
+xhr.onerror = function(event){
+    window.location.replace("/");
+};
 xhr.send();
 
 function create_organizations(data) {
@@ -48,6 +48,3 @@ function create_channels(data) {
 create_organizations(null);
 create_projects(null);
 create_channels(null);
-
-//export default orgs;
-
